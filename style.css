@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(img/bg.jpg);
+}
+
+
+.heading-big {
+    font-size: 50px;
+}
+
+.heading-small {
+    font-size: 40px;
+}
+
+header {
+    background: rgb(255,101,47);
+    background: linear-gradient(90deg, rgba(255,101,47,1) 10%, rgba(0,212,255,1) 100%);
+    height: 5vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul li a{
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    margin: 1rem;
+    font-size: 1.25rem;
+    font-weight: 800;
+    background-color: #F0F0F0;
+    color: #ff652f;
+}
+
+nav ul li a:hover {
+    background-color: #ff652f;
+    color: #F0F0F0;
+}
+
+
+
+#home section {
+    text-align: center;
+    height: fit-content;
+    margin: auto;
+    padding-top: 300px;
+}
+
+section>* {
+    margin: 1rem;
+}
+
+#home-p {
+    border-bottom: 4px solid #ff652f;
+    width: 100%;
+    margin: auto;
+}
+
+#home-p h1 {
+    margin-bottom: 2rem;
+}
+
+#span-name {
+    color: orangered;
+}
+
+footer {
+    background: rgb(255,255,255);
+    background: -moz-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,101,47,1) 76%);
+    background: -webkit-radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,101,47,1) 76%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,101,47,1) 76%);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+
+#social-links {
+    display: flex;
+}
+
+#social-links a {
+    margin: 0.5rem;
+    color: white;
+    
+}
+
+#copyright {
+    align-self: center;
+    color: white;
+}
+
+
+#about-me {
+    min-height: 50vh;
+    display: grid;
+    place-items: center;
+    margin-top: 12rem;
+    font-size: 1.2rem;
+}
+
+#bio {
+    width: 107.5rem;
+    height: max-content;
+}
+
+#bio h2 {
+    text-align: center;
+}
+
+#jobs {
+    display: grid;
+    grid-template-columns: 35rem 35rem 35rem;
+    gap: 1rem;
+    max-width: 300rem;
+    background-color: #ff652f;
+    border-radius: 20px;
+}
+
+.job {
+    border-bottom: 5px solid #ff652f;
+    color: white;
+}
+
+.job h2 {
+    color: black;
+}
+
+#my-projects {
+    padding-top: 4rem;
+}
+
+#my-projects h1 {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+#projects {
+    width: 80vw;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+
+.project {
+    position: relative;
+    border-bottom: 5px solid #ff652f;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+    border-radius: 10px;
+    -webkit-box-shadow: 5px 5px 20px -1px rgba(0,0,0,0.81); 
+    box-shadow: 5px 5px 20px -1px rgba(0,0,0,0.81);
+}
+
+.image{
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    gap: 3rem;
+}
+
+.project:hover .image {
+    opacity: 0.3;
+}
+
+.project:hover .middle {
+    opacity: 1;
+}
+
+.text1 {
+    background-color: rgb(255, 101, 47);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+}
+
+.text2 {
+    background-color: rgb(255, 101, 47);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+}
+
+.text1:hover, .text2:hover {
+    background-color: white;
+    color: #ff652f;
+}
+
+#contact-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+#contact-list {
+    display: flex;
+    gap: 4rem;
+    
+}
+
+.contact {
+    font-size: 2rem;
+}
